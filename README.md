@@ -81,8 +81,7 @@ return 0;
 #include <vector>
 #include <algorithm>
 using namespace std;
-
-
+	
 int main() {
 
 	int i = 0;
@@ -98,7 +97,6 @@ int main() {
 		cin >> a;
 		words.push_back(a);
 	}
-
 	for (int j = 0; j < words.size(); j++) {
 		string a = words[j];
 		if (a.length() >= 4) {
@@ -107,7 +105,6 @@ int main() {
 			dic[j] = a[a.length() - 1];
 		}
 	}
-
 	for (int j = 0; j < i; j++) {
 		for (int k = j; k < i; k++) {
 			if (dic[j] < dic[k]) {
@@ -117,9 +114,7 @@ int main() {
 			}
 		}
 	}
-
 	reverse(words.begin(), words.end());
-
 	for (int j = 0; j < i; j++) {
 		cout << words.at(j) << "\n";
 	}
